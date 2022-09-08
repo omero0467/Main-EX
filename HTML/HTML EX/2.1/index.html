@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Form</title>
+</head>
+<body>
+    <h1>Create An Account</h1>
+    <!-- form -->
+    <form action="process.php">
+<!-- name -->
+    <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name">
+    </div>
+<br>
+<br>
+<!-- email -->
+<div>
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" placeholder="Enter Email">
+</div>
+<br>
+<!-- Password -->
+<div>
+    <label for="Password">Password</label>
+    <input type="password" id="Password" name="Password" placeholder="Enter Password">
+</div>
+<br>
+<!-- message -->
+    <div>
+    <label for="message">Message</label><br>
+    <textarea name="freetext" id="message" cols="30" rows="5" placeholder="Optional"></textarea>
+    <div>
+<br>
+<!-- sex selection -->
+    <div><label for="sex">Gender</label></div>
+    <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <div>
+<br>
+<!-- age selection -->
+    <div>
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age" placeholder="Min Age is 18">
+    </div>
+<br>
+<!-- date selection -->
+    <div>
+        <label for="birthdate">Birthdate</label><br>
+        <input type="date" name="birthdate" id="birthdate">
+    </div>
+<br>
+    <div>
+        <label for="membership">Membership</label><br>
+        <input type="radio" name="membership" id="membership" value="low">Standard
+        <input type="radio" name="membership" id="membership" value="low" checked>Advance
+        <input type="radio" name="membership" id="membership" value="low">Pro
+    </div>
+<br>
+    <div>
+        <label for="terms">I agree to the <a href="">terms of service</a></label>
+        <input type="checkbox" name="terms" id="terms" value="agree">
+    </div>
+    <br>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</form>
+</body>
+</html>
