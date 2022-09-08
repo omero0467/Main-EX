@@ -1,0 +1,57 @@
+
+.card {
+    margin: auto;
+    background-color: rgb(215, 227, 250);
+    box-sizing: border-box;
+    display: block;
+    border-radius: .25rem;
+    max-width: 300px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+.card header {
+    font-size: 26px;
+    display: block;
+    color: rgb(0, 106, 255);
+    padding: 7px;
+    margin: 5px;
+        }
+
+.description {
+    text-align: left;
+    padding: 5px;
+    margin: 10px;
+}
+
+li a {
+    padding-right: 5;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+li {
+    display: inline;
+}
+.navbar {
+    box-sizing: border-box;
+    margin: 15px;
+    padding: 5px 0 ;
+    background-color: #003cff;
+    border-radius: .25rem;
+}
+.navbar ul {
+    margin: 10px;
+    padding: 0;
+}
+.navbar li a:hover {
+    color: rgb(42, 190, 153);
+}
+.cardimg {
+    overflow: hidden;
+}
+
+.cardimg img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
