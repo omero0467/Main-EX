@@ -1,43 +1,44 @@
 .divs {
     border: 1px solid black;
-    /* padding: 0;
-    margin: 0; */
+    background-color: aliceblue;
 }
 
-.main{
-    max-width: 600px;
-    max-height: 800px;
+.main {
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
     margin: auto;
-    margin-top: 50px;
+    overflow: visible;
 }
+
 #one {
     position: absolute;
+    z-index: 1;
     width: 200px;
     height: 200px;
 }
+
 #two {
     position: absolute;
-    top: 25%;
-    left: 50%;
+    z-index: 2;
+    top: 17%;
+    left: 9%;
     width: 200px;
     height: 250px;
 }
+
 #three {
-position: absolute;
-bottom: 10%; 
+    position: absolute;
+    z-index: 3;
+    top: 41%;
     width: 500px;
     height: 150px;
 }
-#four {
-position: absolute;
-left: 98%;
-/* top: 0%; */
-    width: 100px;
-    height: 600px;
-}
 
-#container {
-    position: relative;
-    max-width: 700px;
-    max-height: 600px;
+#four {
+    position: absolute;
+    z-index: 4;
+    left: 26%;
+    width: 100px;
+    height: 550px;
 }
