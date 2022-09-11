@@ -1,0 +1,43 @@
+.divs {
+    border: 1px solid black;
+    /* padding: 0;
+    margin: 0; */
+}
+
+.main{
+    max-width: 600px;
+    max-height: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+#one {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+#two {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 200px;
+    height: 250px;
+}
+#three {
+position: absolute;
+bottom: 10%; 
+    width: 500px;
+    height: 150px;
+}
+#four {
+position: absolute;
+left: 98%;
+/* top: 0%; */
+    width: 100px;
+    height: 600px;
+}
+
+#container {
+    position: relative;
+    max-width: 700px;
+    max-height: 600px;
+}
