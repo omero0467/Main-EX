@@ -1,0 +1,138 @@
+*{
+    font-family: 'Raleway', sans-serif;
+
+}
+body{
+    
+    background-color: #344a72;
+}
+
+main {
+/* position: absolute; */
+/* left: 50%;
+right: 50%; */
+max-width: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+.container1{
+    position: relative;
+    float: left;
+    max-width: 47.25%;
+}
+.container2{
+    position: relative;
+    float: right;
+    max-width: 47.25%;
+}
+
+.flat{
+    border: 0cm;
+    font-size: 18px;
+    padding: .6em;
+    margin: 10px;
+    color: #fff;
+    background-color: rgb(66, 135, 254);
+}
+.flatghost{
+    border: 1px solid red;
+    font-size: 18px;
+    padding: .6em;
+    margin: 10px;
+    color: #fff;
+    background-color: transparent;
+}
+.flatghost:hover{
+    border: 1px solid rgb(214, 3, 3);
+    font-size: 18px;
+    padding: .6em;
+    margin: 10px;
+    color: #fff;
+    background-color: rgb(214, 3, 3);
+}
+.round{
+    border: 0cm;
+    font-size: 18px;
+    border-radius: 1.2em;
+    padding: .7em;
+    margin: 10px;
+    color: #fff;
+    background-color: rgb(64, 147, 54);
+}
+
+.roundghost {
+    border: 1px solid rgb(214, 179, 3);
+    border-radius: 1.2em;
+    font-size: 18px;
+    padding: .6em;
+    margin: 10px;
+    color: #fff;
+    background-color: transparent;
+}
+.roundghost:hover{
+    border: 1px solid rgb(214, 179, 3);
+    font-size: 18px;
+    padding: .6em;
+    margin: 10px;
+    color: #fff;
+    background-color: rgb(214, 179, 3);
+}
+
+.container2
+.flat{
+    border: 0cm;
+    font-size: 14px;
+    padding: .6em;
+    margin: 10px;
+    color: #fff;
+    background-color: rgb(246, 214, 56);
+}
+
+.container2 .flatghost{
+    border: 1px solid  rgb(153, 0, 120);
+    font-size: 14px;
+    padding: .6em;
+    margin: 10px;
+    color: #fff;
+    background-color: transparent;
+}
+.container2
+.flatghost:hover{
+    border: 1px solid rgb(153, 0, 120);
+    font-size: 14px;
+    padding: .6em;
+    margin: 10px;
+    color: #fff;
+    background-color: rgb(153, 0, 120);
+}
+.container2
+.round{
+    border: 0cm;
+    font-size: 14px;
+    border-radius: 1.2em;
+    padding: .7em;
+    margin: 10px;
+    color: #fff;
+    background-color: rgb(242, 34, 107);
+}
+
+.container2
+.roundghost {
+    border: 1px solid rgb(21, 214, 3);
+    border-radius: 1.2em;
+    font-size: 14px;
+    padding: .6em;
+    margin: 10px;
+    color: #fff;
+    background-color: transparent;
+}
+.container2
+.roundghost:hover{
+    border: 1px solid rgb(21, 214, 3);
+    font-size: 14px;
+    padding: .6em;
+    margin: 10px;
+    color: #fff;
+    background-color: rgb(21, 214, 3);
+}
