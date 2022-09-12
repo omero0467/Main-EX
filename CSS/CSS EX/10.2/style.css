@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: url(https://images.unsplash.com/photo-1662946025049-9de03ddbb8e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2487&q=80) center center/cover;
+    height: 100vh;
+    text-align: center;
+    padding-top: 15rem;
+    color: rgb(36, 78, 134);
+}   
+
+h1 { 
+    font-size: calc(2rem + 3.6vw);
+    }
+ header p{
+    padding: 1.5rem;
+ }
+
+ .btn a{
+    text-decoration: none; 
+    color: #333;
+ }
+
+ .btn {
+   
+    padding: .75rem 2rem;
+ }
+
+ section {
+    padding: .8rem;
+ }
+
+ @media (max-height:300px) {
+    header {
+        padding-top: 2rem;
+    }
+    
+ }
