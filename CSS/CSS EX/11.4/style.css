@@ -1,0 +1,27 @@
+body {
+    margin-left:0;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    height: 100vh;
+}
+
+.box{
+    background: red;
+    height: 100px;
+    width: 100px;
+}
+
+.box2 {
+    background-color: blue;
+}
+
+.box3{
+    background-color: green;
+}
