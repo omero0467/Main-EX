@@ -1,0 +1,172 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    padding: 10px 10px;
+    background: transparent;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    margin: 0%;
+}    
+
+.btn5::before {
+    content:'';
+    position: absolute;
+    background: rgb(0, 0, 0);
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in;
+    font-size: 40px;
+    width: 100%;
+}
+
+
+/* BUTTON HOVER EFFECTS */
+
+.btn5:hover:before {
+    content: attr(name);
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(-0);
+}
+
+.btn5:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/* Button 1 */
+
+.btn1::before {
+    content:'';
+    position: absolute;
+    background: rgb(255, 3, 3);
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    transition: .7s ease-in;
+    width: 100%; 
+    top: -100%;
+    left: 0;
+}
+
+
+/* BUTTON HOVER EFFECTS */
+
+.btn1:hover:before {
+    content: 'cool';
+    position: absolute;
+    height: 100%;
+
+    transform: translateY(100%);
+}
+
+
+
+/* Button 2*/
+
+.btn2::before {
+    content:'';
+    position: absolute;
+    background: rgb(11, 3, 255);
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    transition: .7s ease-in;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/* BUTTON HOVER EFFECTS */
+
+.btn2:hover:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translatex(100%);
+    z-index: -1;
+}
+
+/* button 3 */
+
+.btn3::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 3);
+    display: flex;
+    transition: 2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: translatex(-100% );  
+}
+
+
+/* BUTTON HOVER EFFECTS */
+
+.btn3:hover:before {
+    content: '';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+/* BUTTON 4 */
+
+
+.btn4:hover {
+    transform: skew(-25deg); 
+    transition: all 1s ease-in-out; 
+}
+
+/* .btn4:before {
+    } */
+
+
+/* BUTTON HOVER EFFECTS */
+
+.btn4:hover:before {
+    content: '';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: skew(50deg);
+    transform: scale(-2);
+    transform: rotate(360deg);
+    z-index: -1;
+    background-color: rgb(255, 0, 183);
+}
+
