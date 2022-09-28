@@ -1,23 +1,20 @@
 const isString = (a, callback) => {
-    function callback (x) {
-        console.log(x);
-    }
     if (typeof a === 'string') {
         callback(a)
+        function callback (x) {
+            console.log(x);
+        }
     }
 }
 
 isString()
 
-const firstWordUpperCase = (a, callback) => {
+const firstWordUpperCase = (a, func) => {
     let arr = a.split(' ');
-    let firstWord = arr[0].toUpperCase();
-    arr.splice(0,1, firstWord)
-    callback = (x) => {
-        arr = 
-        x.join('-');
-    }; callback(arr)
+    arr[0] = arr[0].toUpperCase();
+    func = (x) => {
+        arr = x.join('-');}
+    func(arr),
     console.log(arr);
 }
-
-firstWordUpperCase('Create your own function that will receive from one of its')
+firstWordUpperCase('The function should console log a step shape')
