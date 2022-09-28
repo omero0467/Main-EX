@@ -10,7 +10,7 @@ const compare = (a,b) => {
             }
         }
     }
-    if (myArr === []) {console.log(false);} else {
+    if (myArr.length === 0) {console.log(false);} else {
 
         console.log(myArr);
     }
