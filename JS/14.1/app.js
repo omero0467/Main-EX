@@ -6,13 +6,12 @@ let myarr = numbers.reduce((accumulator, currentVal)=> {
     )
     console.log(myarr);
     
-    let myarr2 = numbers.reduce((acc, cuu) => cuu % 2 === 0
-    ? {odd: acc.odd, even: acc.even + cuu}
-    : {even: acc.even, odd: acc.odd+cuu},
-  {even:0, odd:0});
+    let myarr2 = numbers.reduce((acc, cuu) => {
+        if (cuu%2===0){
+            return acc + cuu
+        } return acc });
     console.log(myarr2);
 
-    let myarr1 = numbers.reduce((accumulator, currentVal)=> {
-        return accumulator + currentVal
+    let myarr1 = numbers.reduce((accumulator, currentVal)=> {return accumulator + currentVal
     }) / numbers.length
     console.log(myarr1);
