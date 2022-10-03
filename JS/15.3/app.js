@@ -1,5 +1,9 @@
-function getSum(arr1, arr2){
-    constsum = 0;
-    for(leti=0; i < arr1.length; i++){sum += arr1[i];}
-    for(leti=0; i < arr2.length; i++){sum += arr2[i];}}
-    getSum([1,2,3][5,66,23]);
+function getSumOfEven(arr) { 
+    return arr[1] + arr[3] + arr[5] + arr[7] + arr[9]; 
+}
+getSumOfEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+    //1 line num 2
+    //2 i used debbuger in vs code 
+    //3 the index is wrong
+    //4 code fixed on line 2

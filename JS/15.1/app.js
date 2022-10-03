@@ -7,3 +7,8 @@ function getSum(arr1, arr2) {
 } 
     
     getSum([1, 2, 3],[5, 66, 23]);
+
+    //1 line num 3
+    //2 i used debbuger in vs code 
+    //3 the args arnt seperated by a comma which makes them impossiblie for the function to read and use
+    //4 code fixed on line 9
