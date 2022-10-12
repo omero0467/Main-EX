@@ -31,3 +31,5 @@ const list = document.createElement('ol');
     textel.appendChild(words)
     textel.appendChild(list)
     document.body.appendChild(loremi)
+
+    document.getElementsByClassName('li').item(1).setAttribute(style, 'color=red')

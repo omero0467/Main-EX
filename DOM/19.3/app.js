@@ -3,7 +3,7 @@ for (let i=0; i<inputs.length; i++) {
 inputs[i].maxLength = 1
 let input = inputs[i]
 input.addEventListener('input', (e) => {
-    if (e.target.value) {
+    if (e.target.value && e.target!==inputs[inputs.length-1]) {
         inputs[i+1].focus()
     }
 })}
@@ -20,5 +20,5 @@ document.addEventListener("paste", function(e) {
         node.value = data[index];
       });
      form.submit()
-    }
+    } else {null}
   });
