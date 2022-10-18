@@ -23,14 +23,14 @@ document.addEventListener('keyup',e =>{
     }
     if(tableRow1.lastElementChild.classList.value.includes('active')) {
         console.log('player1 wins')
-       setTimeout(()=>{restart()},500)
-       winner.innerText = 'player 1 wins'
+       setTimeout(()=>{restart()},1200)
+       winner.innerText = 'player 1 wins!'
        winner.classList.toggle('hidden')
     }
     else if(tableRow2.lastElementChild.classList.value.includes('active')) {
         console.log('player 2 wins')
-        setTimeout(()=>{restart()},500)
-        winner.innerText = 'player 2 wins'
+        setTimeout(()=>{restart()},1200)
+        winner.innerText = 'player 2 wins!'
         winner.classList.toggle('hidden')
     }
     
