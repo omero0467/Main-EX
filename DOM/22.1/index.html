@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <style> 
+    input{display: block;}
+    .btn {
+        padding: 5px;
+    }
+    .page-overlay{
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textbox{
+        padding: 1rem;
+        background-color: #f4f4f4;
+    }
+    .hidden {
+        display: none;
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="page-overlay hidden">
+        <div class="text-box">
+            <h3>Are you sure you want to submit?</h3>
+            <button id="confirm" type="submit">Confirm</button>
+            <button class="btn" id ="change">Change</button>
+        </div>
+    </div>
+    <center>
+        <form id="myForm" method="get">
+
+            <input type="email" id="email" name="email" placeholder="email address">
+            <input type="text" id="name" name="username" placeholder="Your Name">
+            <input type="text" id="age" name="age" placeholder="Age">
+            <button id ="submit1" class="btn" >Submit</button>
+        </form>
+    </center>
+</body>
+</html>
