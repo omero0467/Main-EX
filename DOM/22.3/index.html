@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <style>
+        .hidden{
+            display: none;
+        }
+        #randomChar{
+            border: 1px solid black;
+            padding: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Welcome to guess my letter</h1>
+        <div id="randomChar">?</div>
+        <div id="user-message">Guess a Key</div>
+        <div class="hidden" id="correctGuess">
+            <p>would you like to play again?</p>
+            <button id="playagain">Yes</button>
+        </div>
+        <div id="guessed">
+            <h2>Keys guessed</h2>
+            <p id="keys"></p>
+        </div>
+    </center>
+</body>
+</html>
