@@ -1,16 +1,13 @@
 const storm = {
     // add code here
     superPower: {
-    Power:'flying',
-    change: () => {
-    this.Power='runing'}
+    Power:'flying'
 },
-    // printSuperPower: printSuperPower
+    printSuperPower: printSuperPower
 }
-// function printSuperPower() {
-//     console.log(this.superPower)
-//     ;}
+function printSuperPower() {
+    console.log(this.superPower)
+    ;}
 // printSuperPower.call(storm)
-// storm.printSuperPower()
-storm.superPower.change()
-console.log(storm)
+storm.printSuperPower()
+
