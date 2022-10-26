@@ -6,7 +6,7 @@ getButton.addEventListener('click', insertJokes
 
 
 async function fetchData () {
-    const res1 = await fetch(('https://api3.jokes.one/jod')
+    const res1 = await fetch(('https://api.jokes.one/jod')
     )
     if(!res1.ok){ throw new Error ('fetch failed') }
     return res1.json()

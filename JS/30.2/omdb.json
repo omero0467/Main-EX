@@ -1,0 +1,40 @@
+{
+    "movies" : [{
+    "title" : "Blade Runner 2049",
+    "id" : "1",
+    "year" : "2017",
+    "director" : "Denis Villeneuve",
+    "poster": "https://img.fruugo.com/product/7/86/99799867_max.jpg"
+    
+    },
+        {
+    "title" : "The Dark Knight",
+    "id" : "2",
+    "year" : "2008",
+    "director" : "Amit",
+    "poster": "https://www.hcinema.org.il/wp-content/uploads/2022/03/the-dark-knight-poster-1.jpg"
+    },
+        {
+    "title" : "Amadeus",
+    "id" : "3",
+    "year" : "1970",
+    "director" : "Roni",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWJlNzUzNGMtYTAwMS00ZjI2LWFmNWQtODcxNWUxODA5YmU1XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg"
+    },
+        {
+    "title" : "Ocean's11",
+    "id" : "4",
+    "year" : "2006",
+    "director" : "Adi",
+    "poster": "https://d1uzk9o9cg136f.cloudfront.net/f/16782943/rc/2017/10/17/c4ef4d895fbc682ea6846e07702c1b6592cca747_xlarge.jpg"
+    },
+        {
+    "title" : "Ocean's12",
+    "id" : "5",
+    "year" : "2010",
+    "director" : "Tomer",
+    "poster": "https://cdn.shopify.com/s/files/1/1416/8662/products/ocean_stwelve_2004_advance_original_film_art_1200x.jpg?v=1589659785"
+    }
+
+]
+}
