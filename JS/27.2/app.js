@@ -50,6 +50,7 @@ const sortWord = (arr) =>{
         }
     })
 }
+
 makeAllCaps(myarr2)
 .then((res)=>{
     console.log('resolved')
