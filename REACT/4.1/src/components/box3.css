@@ -1,0 +1,9 @@
+#box3{
+    background-color: pink;
+    width: 50vmin;
+    height: 30vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }

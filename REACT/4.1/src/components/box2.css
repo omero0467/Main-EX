@@ -1,0 +1,10 @@
+
+#box2{
+    background-color: #61dafb;
+    width: 55vmin;
+    height: 35vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
