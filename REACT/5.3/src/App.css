@@ -1,0 +1,16 @@
+.flex-center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  box-shadow:  4px 4px 5px grey;
+  border: 3px solid rgba(200, 198, 198, 0.488);
+
+  margin: 1rem;
+}
+
+.dogImage{
+  height: 300px;
+}
