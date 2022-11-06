@@ -1,9 +1,8 @@
 import React from "react";
 import "./App.css";
-import Button from "./Button";
-import image1 from'./images/1.JPG'
-import image2 from'./images/2.JPG'
-import image3 from'./images/3.JPG'
+import Mother from "./components/Mother";
+// import Child from "./components/Child";
+// import Balloons from "./components/Balloons";
 // const Style = {
 //   fontWeight: 'bold',
 // }
@@ -14,10 +13,9 @@ import image3 from'./images/3.JPG'
 function App() {
   return (
     <div className="flex-center">
-      
-      <Button title="Naknik" description='Long dog' image={image3}></Button>
-    <Button title="Husky" description='warm dog' image={image2}></Button>
-  <Button title="Golden" description = 'friendly' image={image1}></Button>
+      <Mother>
+        
+      </Mother>
     </div>
   );
 }
