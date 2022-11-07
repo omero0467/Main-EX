@@ -10,4 +10,3 @@ function printSuperPower() {
     ;}
 // printSuperPower.call(storm)
 storm.printSuperPower()
-

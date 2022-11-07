@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  font-size: 30px;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  grid-auto-flow: column;
+}
+
+button{
+  font-size: 30px;
+}

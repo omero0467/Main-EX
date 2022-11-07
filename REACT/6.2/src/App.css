@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper{
+  position: relative;
+  border: 1px solid black;
+  height: 200px;
+  width: 100px;
+ display: grid;
+ place-items: center;
+}
+
+.wrapper>button{
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
