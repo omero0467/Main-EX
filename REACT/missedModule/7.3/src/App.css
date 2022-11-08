@@ -36,32 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.box1{
-  background-color: limegreen;
-  width: 60vmin;
-  height: 40vmin;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.box3{
-background-color: pink;
-width: 50vmin;
-height: 30vmin;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-}
-
-.box4{
-  background-color: violet;
-  width: 30vmin;
-  height: 10vmin;
-  display: flex;
-  margin: 10px 0;
-  align-items: center;
-  justify-content: center;
-}

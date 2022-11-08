@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+
+.red {
+  padding: 5px;
+  border: #282c34 2px solid;
+  background-color: red;
+}
+.yellow{
+  padding: 5px;
+  border: #282c34 2px solid;
+  background-color: rgb(255, 242, 0);
+}
+
+.blue{
+  padding: 5px;
+  border: #282c34 2px solid;
+  background-color: rgb(30, 0, 255);
+}
