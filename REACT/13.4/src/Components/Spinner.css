@@ -1,0 +1,23 @@
+.myBox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.spinner {
+  border: 4px solid grey;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: gold-circle 2s linear infinite;
+  border-top: 4px solid goldenrod;
+}
+
+@keyframes gold-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

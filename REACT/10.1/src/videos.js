@@ -1,4 +1,5 @@
-exports.videodata = [
+import'./SurfEleni.mp4'
+const videodata = [
     {
     "sources" :  "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
     "subtitle" : "By Blender Foundation",
@@ -18,4 +19,11 @@ exports.videodata = [
     "title" : "For Bigger Joyrides"
 
   },
+  {
+    "sources": './SurfEleni.mp4',
+    "title": ' Mac Miller -Surf -Eleni Cover'
+
+  }
 ]
+
+export default videodata

@@ -1,7 +1,8 @@
 import React, { useState, useRef} from "react";
 import "./App.css";
 import PlayButton from "./PlayButton";
-import { videodata } from "./videos";
+import videodata from "./videos";
+import'./SurfEleni.mp4'
 
 function App() {
   const [videos, setVideos] = useState(videodata);

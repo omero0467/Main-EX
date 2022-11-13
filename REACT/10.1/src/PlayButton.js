@@ -1,5 +1,7 @@
 import React from 'react'
 import { BsPlayCircleFill, BsPauseCircleFill, BsFillSkipStartCircleFill, BsFillSkipEndCircleFill } from 'react-icons/bs'
+import'./SurfEleni.mp4'
+
 
 function PlayButton({ Refrence, videos,setVideos,isPlaying,setIsPlaying,currentVideo,
     setCurrentVideo}) {
@@ -39,8 +41,8 @@ function PlayButton({ Refrence, videos,setVideos,isPlaying,setIsPlaying,currentV
             setCurrentVideo((prev)=>prev = videos[idx + 1]
             )
         }
-        setIsPlaying((prev)=>!prev)
 
+        setIsPlaying((prev)=>!prev)
     }
 
     return (
