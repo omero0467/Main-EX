@@ -10,14 +10,14 @@ function TodoTask({idx,handleClick,item, handleDelete}) {
 
   return (
     <Card>
-        {item.completed?<button onClick={()=>{handleClick(item.id,idx)}}>
+        {item.completed?<span onClick={()=>{handleClick(item.id,idx)}}>
             <BsFillCheckCircleFill size={30}/>
-        </button>:<button onClick={()=>{handleClick(item.id)}}>
+        </span>:<span onClick={()=>{handleClick(item.id)}}>
             <BsFillXCircleFill size={30}/>
-        </button>}
-        <button className="close" onClick={()=>{handleDelete(item.id)}}>
+        </span>}
+        <span className="close" onClick={()=>{handleDelete(item.id)}}>
         <BsXCircle color='purple' size={30}></BsXCircle>
-      </button>
+      </span>
       <div className="text-display">{item.text}</div>
     </Card>
   )
