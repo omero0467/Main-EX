@@ -1,0 +1,9 @@
+[
+  {
+    "text": "as",
+    "completed": false,
+    "id": "717b52b4-dea0-4e01-8d1d-a3cf7b0c0e00"
+  },
+  { "text": "brush teeth", "completed": false, "id": 1 },
+  { "text": "Study Hard", "completed": true, "id": 2 }
+]
