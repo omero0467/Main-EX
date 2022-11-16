@@ -1,5 +1,6 @@
 import React, { useReducer,useEffect,useState,createContext } from 'react'
 import AppReducer from './AppReducer'
+import axios from 'axios'
 
 const initialState ={
     listings: []
@@ -9,7 +10,22 @@ const initialState ={
 export const GlobalContext = createContext(initialState)
 
 export const GlobalProvider = ({children})=>{
-    const [state, dispatch] = useReducer(AppReducer, initialState,)
+const [isLoading, setIsLoading] = useState(false)
+const [state, dispatch] = useReducer(AppReducer, initialState,)
+
+    useEffect(()=>{
+        async function fetchData(){
+            try{
+                setIsLoading(true);
+                const {data} = await axios.get('https://6373a9b9348e94729912f2b1.mockapi.io/crudMock/apartments')
+                initialState.listings=[...data]
+                setIsLoading(false)
+            }catch(e){console.log(e);}
+        }
+        fetchData()
+    },[])
+
+
 
     //Ations
     function removeListing (id){
