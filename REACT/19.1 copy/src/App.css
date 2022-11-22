@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.Gfather{
+  height: 30vmin;
+  width: 50vmin;
+  background-color: lime;
+  display: grid;
+  place-items: center;
+}
+
+.Father{
+  height: 25vmin;
+  width: 45vmin;
+  background-color: pink;
+  display: grid;
+  place-items: center;
+}
+
+.Gson{
+  height: 10vmin;
+  width:40vmin;
+  background-color: lightblue;
+}
