@@ -1,5 +1,5 @@
 import http from 'http'
-import fs, { readFile } from "fs";
+import fs, { readdirSync } from "fs";
 import path,{dirname,} from "path";
 import { fileURLToPath } from "url";
 
@@ -26,11 +26,15 @@ const server = http.createServer((req,res)=>{
     //     })
         
     // }
-    // let url = req.url.slice(1)
-    let filePath = path.join(dirname(__filename),'/public', req.url === '/'?'index.html':`${req.url}`);
+    let filesByUrl= readdirSync('./public')
+    let url = filesByUrl.find((file)=>{
+      return file.includes(req.url.slice(1))
+    })
+
+    let filePath = path.join(dirname(__filename),'/public', req.url === '/'?'index.html':`${url}`);
     let extname = path.extname(filePath)
+
     //Build API -------
-    
     if(req.url === '/api/users'){
         fs.readFile('./public/users.json',(err,content)=>{
             res.writeHead(200, { 'Content-Type':'application/json' });
