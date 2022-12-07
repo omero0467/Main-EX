@@ -26,6 +26,22 @@ const server = http.createServer((req,res)=>{
     //     })
         
     // }
+    
+        //Build API -------
+        // if(req.url === '/api/users'){
+        //     fs.readFile('./public/users.json',(err,content)=>{
+        //         res.writeHead(200, { 'Content-Type':'application/json' });
+        //         res.end(content)
+    
+        //     })
+        // }
+    
+        //SIMPLE WRITE TO DOC -------
+    
+    // res.write('Hello World');
+    
+    // BUILD file path dynamicly
+    // console.log(req.url);
     let filesByUrl= readdirSync('./public')
     let url = filesByUrl.find((file)=>{
       return file.includes(req.url.slice(1))
@@ -33,22 +49,6 @@ const server = http.createServer((req,res)=>{
 
     let filePath = path.join(dirname(__filename),'/public', req.url === '/'?'index.html':`${url}`);
     let extname = path.extname(filePath)
-
-    //Build API -------
-    if(req.url === '/api/users'){
-        fs.readFile('./public/users.json',(err,content)=>{
-            res.writeHead(200, { 'Content-Type':'application/json' });
-            res.end(content)
-
-        })
-    }
-
-    //SIMPLE WRITE TO DOC -------
-
-// res.write('Hello World');
-
-// BUILD file path dynamicly
-// console.log(req.url);
 
 let contentType = 'text/html';
 
