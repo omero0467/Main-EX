@@ -2,6 +2,8 @@ import express, { json } from 'express'
 import './db/mongoose.js'
 import userRouter from './routers/user.js'
 import taskRouter from './routers/task.js'
+import Task from './models/task.js'
+import User from './models/user.js'
 // import bcryptjs from "bcryptjs"
 // import jwt from 'jsonwebtoken'
 
@@ -49,6 +51,13 @@ const myFunction = async () =>{
     // console.log(token);
     // console.log(data);
 
+    const task  = await Task.findById('63a0d4e66d08de6a15ea98f4')
+    await task.populate('owner')
+    console.log(task.owner);
+
+    const user = await User.findById(task.owner)
+    await user.populate('tasks')
+    console.log(user.tasks);
 
 }
 myFunction()
