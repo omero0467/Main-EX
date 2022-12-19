@@ -2,6 +2,7 @@ import bcrypt from 'bcryptjs'
 import { model, Schema } from 'mongoose'
 import validator from 'validator'
 import jwt from 'jsonwebtoken'
+import Task from './task.js'
 
 const userSchema = new Schema({
     name: {
@@ -99,6 +100,12 @@ userSchema.pre('save', async function (next) {
         user.password = await bcrypt.hash(user.password, 8)
     }
 
+    next()
+})
+
+userSchema.pre('remove',async function (next){
+    const user = this
+    await Task.deleteMany({owner: user._id})
     next()
 })
 
