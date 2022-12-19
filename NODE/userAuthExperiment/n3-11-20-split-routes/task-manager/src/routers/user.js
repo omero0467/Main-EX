@@ -5,38 +5,51 @@ const router = new Router()
 
 router.post('/users', async (req, res) => {
     const user = new User(req.body)
-    
+
     try {
-        const token = await user.generateAuthToken()
         await user.save()
-        res.status(201).send({user,token})
+        const token = await user.generateAuthToken()
+        res.status(201).send({ user, token })
     } catch (e) {
         res.status(400).send(e)
     }
 })
 
-router.post('/users/login', async (req,res)=>{
+router.post('/users/login', async (req, res) => {
     try {
-        const user = await User.findByCredentials(req.body.email,req.body.password)
+        const user = await User.findByCredentials(req.body.email, req.body.password)
         const token = await user.generateAuthToken()
-        res.send({user,token})
-    } catch (error) {
-        res.status(400).send(error)
+        res.send({ user, token })
+    } catch (e) {
+        res.status(400).send()
     }
 })
 
-router.get('/users/me', auth ,async (req, res) => {
-    res.send(req.user)
-})
-
-router.post('/users/logout', auth ,async (req,res)=>{
+router.post('/users/logout', auth, async (req, res) => {
     try {
-        req.user.tokens = req.user.tokens.filter((token)=>{return token.token !== req.token})
+        req.user.tokens = req.user.tokens.filter((token) => {
+            return token.token !== req.token
+        })
         await req.user.save()
-        res.send("Logged Out")
-    } catch (error) {
+
+        res.send()
+    } catch (e) {
         res.status(500).send()
     }
+})
+
+router.post('/users/logoutAll', auth, async (req, res) => {
+    try {
+        req.user.tokens = []
+        await req.user.save()
+        res.send()
+    } catch (e) {
+        res.status(500).send()
+    }
+})
+
+router.get('/users/me', auth, async (req, res) => {
+    res.send(req.user)
 })
 
 router.get('/users/:id', async (req, res) => {
@@ -65,15 +78,16 @@ router.patch('/users/:id', async (req, res) => {
     }
 
     try {
-        // const user = await User.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true })
         const user = await User.findById(req.params.id)
-        updates.forEach((update)=>user[update] = req.body[update]);
+
+        updates.forEach((update) => user[update] = req.body[update])
         await user.save()
+
         if (!user) {
             return res.status(404).send()
         }
 
-        res.status(201).send(user)
+        res.send(user)
     } catch (e) {
         res.status(400).send(e)
     }
@@ -92,5 +106,4 @@ router.delete('/users/:id', async (req, res) => {
         res.status(500).send()
     }
 })
-
 export default router
